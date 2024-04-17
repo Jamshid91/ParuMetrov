@@ -33,8 +33,8 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                     <div class="header-btns d-flex">
-                        <button class="entrance btn-white">Вход</button>
-                        <button class="registration btn-primary">Регистрация</button>
+                        <button class="entrance btn-white login-in__btn">Вход</button>
+                        <button class="registration btn-primary login-regis__btn">Регистрация</button>
                     </div>
                 </div>
             </div>
@@ -57,13 +57,16 @@
                 <div class="row mb-3">
                     <div class="col-12 d-flex align-items-lg-center flex-column flex-lg-row">
                         <div class="me-lg-5">
-                            <h1 class="title-text mb-0"  data-aos="fade-up" data-aos-delay="50"><strong>Проверка недвижимости <br> <span>и оценка рисков</span></strong> <small>при покупке</small></h1>
-                            <p class="title-subtext">Детальный отчет по кадастровому номеру или адресу объекта</p>
+                            <h1 class="title-text mb-0" data-aos="fade-up" data-aos-delay="50"><strong>Проверка недвижимости <br> <span>и оценка рисков</span></strong> <small>при покупке</small></h1>
+                            <p class="title-subtext" data-aos="fade-up" data-aos-delay="75">Детальный отчет по кадастровому номеру или адресу объекта</p>
                         </div>
                         <img src="assets/img/png/wrapper.png" alt="" class="wrapper-img">
                     </div>
                 </div>
-                <div class="row">
+            </div>
+            <div class="scrolling">
+                <div class="container">
+                <div class="row m-0">
                     <div class="col-lg-7">
                         <div class="address position-relative" data-aos="fade-up" data-aos-delay="100">
                             <span class="icon">📍</span>
@@ -74,6 +77,7 @@
                         <button class="check-btn btn-primary">Проверить</button>
                         <a href="#" class="sample-report text-center"><span>Пример отчета</span></a>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -288,9 +292,91 @@
         </div>
     </footer>
 
+    <div class="popUp popUp-form popUp-regis d-none">
+        <div class="popUp-content">
+            <button class="popUp-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.6376 11.9903L20.639 4.98876C21.0946 4.53333 21.0946 3.79694 20.639 3.34157C20.1836 2.88614 19.4472 2.88614 18.9918 3.34157L11.9902 10.343L4.98892 3.34157C4.53327 2.88614 3.79716 2.88614 3.34173 3.34157C2.88609 3.797 2.88609 4.53333 3.34173 4.98876L10.343 11.9903L3.34179 18.9917C2.88614 19.4472 2.88614 20.1836 3.34179 20.6389C3.44982 20.7473 3.57819 20.8332 3.71953 20.8918C3.86087 20.9503 4.01239 20.9804 4.16538 20.9802C4.46354 20.9802 4.76181 20.8661 4.98897 20.6389L11.9902 13.6375L18.9918 20.6389C19.0998 20.7472 19.2282 20.8332 19.3695 20.8917C19.5109 20.9503 19.6624 20.9804 19.8154 20.9802C20.1135 20.9802 20.4118 20.8661 20.639 20.6389C21.0946 20.1835 21.0946 19.4472 20.639 18.9917L13.6376 11.9903Z" fill="#707A8E"/>
+                </svg>
+            </button>
+            <h3 class="popUp-title text-center">Регистрация</h3>
+            <form class="form">
+                <div class="input-box">
+                    <label for="email-regis">Email</label>
+                    <input type="text" id="email-regis" class="form__inp" placeholder="pochta@pochta.ru">
+                    <small></small>
+                </div>
+                <div class="input-box">
+                    <label for="pass-regis">Пароль</label>
+                    <input type="password" id="pass-regis" class="form__inp" placeholder="***********************" required>
+                    <small></small>
+                    <div class="show_pass">
+                       <img src="assets/img/svg/eye.svg" alt="">
+                       <img src="assets/img/svg/eye-open.svg" alt="">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="pass-repeat-regis">Подтверждение пароля</label>
+                    <input type="password" id="pass-repeat-regis" class="form__inp" placeholder="***********************" required>
+                    <small></small>
+                    <div class="show_pass">
+                       <img src="assets/img/svg/eye.svg" alt="">
+                       <img src="assets/img/svg/eye-open.svg" alt="">
+                    </div>
+                </div>
+                <button class="form__btn btn-primary" id="regis-btn" type="button">Зарегистрироваться</button>
+                <div class="form-sub text-center d-flex justify-content-center">
+                    <p>Уже есть аккаунт? </p>
+                    <span class="sign-in login-in__btn">Войти</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="popUp popUp-form popUp-login d-none">
+        <div class="popUp-content">
+            <button class="popUp-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.6376 11.9903L20.639 4.98876C21.0946 4.53333 21.0946 3.79694 20.639 3.34157C20.1836 2.88614 19.4472 2.88614 18.9918 3.34157L11.9902 10.343L4.98892 3.34157C4.53327 2.88614 3.79716 2.88614 3.34173 3.34157C2.88609 3.797 2.88609 4.53333 3.34173 4.98876L10.343 11.9903L3.34179 18.9917C2.88614 19.4472 2.88614 20.1836 3.34179 20.6389C3.44982 20.7473 3.57819 20.8332 3.71953 20.8918C3.86087 20.9503 4.01239 20.9804 4.16538 20.9802C4.46354 20.9802 4.76181 20.8661 4.98897 20.6389L11.9902 13.6375L18.9918 20.6389C19.0998 20.7472 19.2282 20.8332 19.3695 20.8917C19.5109 20.9503 19.6624 20.9804 19.8154 20.9802C20.1135 20.9802 20.4118 20.8661 20.639 20.6389C21.0946 20.1835 21.0946 19.4472 20.639 18.9917L13.6376 11.9903Z" fill="#707A8E"/>
+                </svg>
+            </button>
+            <h3 class="popUp-title text-center">Вход</h3>
+            <form class="form">
+                <div class="input-box">
+                    <label for="email-login">Email</label>
+                    <input type="text" id="email-login" class="form__inp" placeholder="pochta@pochta.ru" required>
+                    <small></small>
+                </div>
+                <div class="input-box">
+                    <label for="pass-login">Пароль</label>
+                    <input type="password" id="pass-login" class="form__inp" placeholder="***********************" required>
+                    <small></small>
+                    <div class="show_pass">
+                       <img src="assets/img/svg/eye.svg" alt="">
+                       <img src="assets/img/svg/eye-open.svg" alt="">
+                    </div>
+                </div>
+                <div class="check-box d-flex align-items-center">
+                    <input type="checkbox" id="check" class="form__check" checked>
+                    <label for="check">Запомнить меня?</label>
+                </div>
+                <button class="form__btn btn-primary" id="login-btn" type="button">Войти</button>
+                <div class="form-sub text-center d-flex justify-content-center">
+                    <p>Еще нет аккаунта?</p>
+                    <span class="sign-in login-regis__btn">Зарегистрироваться</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="assets/js/plugin/jquery.js"></script>
     <script src="assets/js/plugin/aos.js"></script>
     <script src="assets/js/faq.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/popUp.js"></script>
+    <script src="assets/js/scroll.js"></script>
+
+    
     <script>
          AOS.init({
             duration: 800,

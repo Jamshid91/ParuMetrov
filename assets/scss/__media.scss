@@ -338,6 +338,28 @@
     }
   }
 
+  .popUp-thanks {
+    .popUp-content {
+      width: 97%;
+      padding: 50px 16px;
+    }
+    .popUp-close {
+      top: 24px;
+      right: 24px;
+    }
+  }
+
+  .popUp-form {
+    .popUp-content {
+      width: 97%;
+      padding: 40px 32px;
+    }
+    .popUp-close {
+      top: 40px;
+      right: 16px;
+    }
+  }
+
 }
 
 @media (max-width: 420px) {

@@ -539,9 +539,9 @@ input, textarea, select {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   background: #171717;
-  -webkit-transition: .3s all;
-  -o-transition: .3s all;
-  transition: .3s all;
+  -webkit-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all;
 }
 
 .main .faqs .faq-item:last-child {
@@ -859,6 +859,17 @@ input, textarea, select {
   color: #fff;
 }
 
+.main .streachUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+  margin: 0 !important;
+  padding: 20px 0;
+}
+
 .footer {
   padding: 50px 0 20px;
   border-top: 1px solid #0000001A;
@@ -1060,6 +1071,159 @@ input, textarea, select {
 .popUpHide {
   -webkit-animation: popUp-anim-hide 0.5s linear !important;
           animation: popUp-anim-hide 0.5s linear !important;
+}
+
+.popUp-form .popUp-content {
+  width: 540px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  background-image: url(../img/png/regis-bg.png);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: top;
+  padding: 85px 55px 55px;
+}
+
+.popUp-form .popUp-content .popUp-title {
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.popUp-form .popUp-content .input-box {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.popUp-form .popUp-content .input-box label {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #707A8E;
+}
+
+.popUp-form .popUp-content .input-box .form__inp {
+  width: 100%;
+  height: 70px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #fff;
+  border: 1px solid #DFE3EA;
+  padding: 20px 15px 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.popUp-form .popUp-content .input-box .form__inp::-webkit-input-placeholder {
+  color: #707A8E;
+}
+
+.popUp-form .popUp-content .input-box .form__inp:-ms-input-placeholder {
+  color: #707A8E;
+}
+
+.popUp-form .popUp-content .input-box .form__inp::-ms-input-placeholder {
+  color: #707A8E;
+}
+
+.popUp-form .popUp-content .input-box .form__inp::placeholder {
+  color: #707A8E;
+}
+
+.popUp-form .popUp-content .input-box .form__inp:focus {
+  border-color: #0048FF;
+}
+
+.popUp-form .popUp-content .input-box .show_pass {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.popUp-form .popUp-content .input-box .show_pass img:last-child {
+  display: none;
+}
+
+.popUp-form .popUp-content .input-box .showPass {
+  bottom: 16px;
+  right: 15px;
+}
+
+.popUp-form .popUp-content .input-box .showPass img:first-child {
+  display: none;
+}
+
+.popUp-form .popUp-content .input-box .showPass img:last-child {
+  display: block;
+}
+
+.popUp-form .popUp-content .form__btn {
+  width: 100%;
+  height: 53px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.popUp-form .popUp-content .form-sub {
+  margin-top: 36px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #707A8E;
+}
+
+.popUp-form .popUp-content .form-sub span {
+  color: #0048FF;
+  border-bottom: 1px solid #0048FF;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.popUp-form .popUp-content .form-sub span:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.popUp-form .popUp-content .check-box {
+  margin-bottom: 24px;
+}
+
+.popUp-form .popUp-content .check-box .form__check {
+  width: 24px;
+  height: 24px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #0048FF;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.popUp-form .popUp-content .check-box .form__check::before {
+  content: url(../img/svg/check1.svg);
+  display: none;
+}
+
+.popUp-form .popUp-content .check-box .form__check:checked {
+  border: none;
+}
+
+.popUp-form .popUp-content .check-box .form__check:checked::before {
+  display: block;
+}
+
+.popUp-form .popUp-content .check-box label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #0048FF;
+  cursor: pointer;
 }
 
 @-webkit-keyframes popUp-anim {
@@ -1385,5 +1549,21 @@ input, textarea, select {
   .main .faqs .faq-item .faq-body__text {
     font-size: 12px;
     line-height: 14px;
+  }
+  .popUp-thanks .popUp-content {
+    width: 97%;
+    padding: 50px 16px;
+  }
+  .popUp-thanks .popUp-close {
+    top: 24px;
+    right: 24px;
+  }
+  .popUp-form .popUp-content {
+    width: 97%;
+    padding: 40px 32px;
+  }
+  .popUp-form .popUp-close {
+    top: 40px;
+    right: 16px;
   }
 }

@@ -1,5 +1,5 @@
 const popUp = document.querySelectorAll('.popUp');
-// const popUp_close = document.querySelectorAll('.popUp-close');
+const popUp_close = document.querySelectorAll('.popUp-close');
 
 window.addEventListener('click', (e) => {
     popUp.forEach(popup => {
@@ -13,12 +13,12 @@ window.addEventListener('click', (e) => {
     })
 });
 
-// popUp_close.forEach(close => {
-//     close.addEventListener('click', () => {
-//         close.parentElement.classList.add('popUpHide')
-//         setTimeout(() => {
-//             close.parentElement.parentElement.classList.add('d-none')
-//             close.parentElement.classList.remove('popUpHide')
-//           }, 450);
-//     })
-// });
+popUp_close.forEach(close => {
+    close.addEventListener('click', () => {
+        close.parentElement.classList.add('popUpHide')
+        setTimeout(() => {
+            close.parentElement.parentElement.classList.add('d-none')
+            close.parentElement.classList.remove('popUpHide')
+          }, 450);
+    })
+});

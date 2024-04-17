@@ -402,7 +402,7 @@ body {
             left: 50%;
             transform: translateX(-50%);
             background: #171717;
-            transition: .3s all;
+            transition: .5s all;
           }
         }
         &:last-child {
@@ -644,6 +644,18 @@ body {
         }
       }
     }
+    .scrolling {
+    }
+    .streachUp {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      z-index: 99;
+      margin: 0 !important;
+      padding: 20px 0;
+    }
   }
 
   .footer {
@@ -786,6 +798,122 @@ body {
 
   .popUpHide {
     animation: popUp-anim-hide 0.5s linear !important;
+  }
+
+  .popUp-form .popUp-content {
+    width: 540px;
+    border-radius: 30px;
+    background-image: url(../img/png/regis-bg.png);
+    background-size: cover;
+    background-position: top;
+    padding: 85px 55px 55px;
+    .popUp-title {
+      color: #fff;
+      margin-bottom: 35px;
+    }
+    .input-box {
+      position: relative;
+      margin-bottom: 18px;
+      label {
+        position: absolute;
+        left: 15px;
+        top: 13px;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 500;
+        color: #707A8E;
+      }
+      .form__inp {
+        width: 100%;
+        height: 70px;
+        border-radius: 10px;
+        background: #fff;
+        border: 1px solid #DFE3EA;
+        padding: 20px 15px 0;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 500;
+        &::placeholder {
+          color: #707A8E;
+        }
+        &:focus {
+          border-color: #0048FF;
+        }
+      }  
+      .show_pass {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        cursor: pointer;
+        img:last-child {
+          display: none;
+        }
+      }
+      .showPass {
+        bottom: 16px;
+        right: 15px;
+        img {
+            &:first-child {
+                display: none;
+            }
+            &:last-child {
+                display: block;
+            }
+        } 
+    }
+    }
+    .form__btn {
+      width: 100%;
+      height: 53px;
+      border-radius: 10px;
+    }
+    .form-sub {
+      margin-top: 36px;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 500;
+      color: #707A8E;
+      span {
+        color: #0048FF;
+        border-bottom: 1px solid #0048FF;
+        margin-left: 5px;
+        cursor: pointer;
+        &:hover {
+          color: #000;
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
+
+    .check-box {
+      margin-bottom: 24px;
+      .form__check {
+        width: 24px;
+        height: 24px;
+        appearance: none;
+        border: 1px solid #0048FF;
+        border-radius: 4px;
+        margin-right: 8px;
+        cursor: pointer;
+        &::before {
+          content: url(../img/svg/check1.svg);
+          display: none;
+        }
+        &:checked {
+          border: none;
+        }
+        &:checked::before {
+          display: block;
+        }
+      }
+      label {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 500;
+        color: #0048FF;
+        cursor: pointer;
+      }
+    }
   }
 
   @keyframes popUp-anim {
