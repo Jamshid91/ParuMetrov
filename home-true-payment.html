@@ -52,7 +52,7 @@
     </header>
 
     <main class="main">
-        <div class="wrapper">
+        <div class="block1">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -74,36 +74,36 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-7">
-                        <div class="wrapper-item" data-aos="fade-up" data-aos-delay="150">
-                            <p class="wrapper-item-sub">Кадастровый номер объекта недвижимости</p>
+                        <div class="block1-item" data-aos="fade-up" data-aos-delay="150">
+                            <p class="block1-item-sub">Кадастровый номер объекта недвижимости</p>
                             <div class="d-flex align-items-start">
                                 <img src="assets/img/svg/check.svg" alt="">
-                                <p class="wrapper-item-info">00:00:0000000:00 г Москва, пр-кт Мира, д 101 стр 1</p>
+                                <p class="block1-item-info">00:00:0000000:00 г Москва, пр-кт Мира, д 101 стр 1</p>
                             </div>
                         </div>
-                        <div class="wrapper-item" data-aos="fade-up" data-aos-delay="150">
-                            <p class="wrapper-item-sub">Адрес объекта недвижимости</p>
+                        <div class="block1-item" data-aos="fade-up" data-aos-delay="150">
+                            <p class="block1-item-sub">Адрес объекта недвижимости</p>
                             <div class="d-flex align-items-start">
                                 <img src="assets/img/svg/check.svg" alt="">
-                                <p class="wrapper-item-info">00:00:0000000:00 г Москва, пр-кт Мира, д 101 стр 1</p>
+                                <p class="block1-item-info">00:00:0000000:00 г Москва, пр-кт Мира, д 101 стр 1</p>
                             </div>
                         </div>
-                        <div class="wrapper-item" data-aos="fade-up" data-aos-delay="150">
-                            <p class="wrapper-item-sub">Тип объекта недвижимости</p>
+                        <div class="block1-item" data-aos="fade-up" data-aos-delay="150">
+                            <p class="block1-item-sub">Тип объекта недвижимости</p>
                             <div class="d-flex align-items-start">
                                 <img src="assets/img/svg/check.svg" alt="">
-                                <p class="wrapper-item-info">00:00:0000000:00 г Москва, пр-кт Мира, д 101 стр 1</p>
+                                <p class="block1-item-info">00:00:0000000:00 г Москва, пр-кт Мира, д 101 стр 1</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5 d-flex flex-column justify-content-between">
-                        <div class="wrapper-item pb-lg-5" data-aos="fade-up" data-aos-delay="150">
-                            <p class="wrapper-item-sub">Результат поиска объекта недвижимости</p>
+                        <div class="block1-item pb-lg-5" data-aos="fade-up" data-aos-delay="150">
+                            <p class="block1-item-sub">Результат поиска объекта недвижимости</p>
                             <div class="d-flex align-items-start">
                                 <img src="assets/img/svg/check.svg" alt="">
                                 <div class="">
-                                    <p class="wrapper-item-info"><strong>Объект недвижимости определен.</strong></p>
-                                    <p class="wrapper-item-info mt-2">Проверьте параметры объекта и подтвердите выполнение запроса.</p>
+                                    <p class="block1-item-info"><strong>Объект недвижимости определен.</strong></p>
+                                    <p class="block1-item-info mt-2">Проверьте параметры объекта и подтвердите выполнение запроса.</p>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
             </div>
         </div>
 
-        <div class="map">
+        <div class="block2">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -122,7 +122,7 @@
             </div>
         </div>
 
-        <div class="objects">
+        <div class="block3">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -131,7 +131,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <form class="objects-form">
+                        <form class="block3-form">
                             <div class="check-box d-grid">
                                 <div class="check-item" data-aos="fade-up" data-aos-delay="50">
                                     <input type="radio" id="rad1" name="object">
@@ -378,10 +378,11 @@
     <script src="assets/js/form.js"></script>
     <script src="assets/js/popUp.js"></script>
     <script>
-         AOS.init({
-            duration: 800,
-            once: true,
-        })
+        AOS.init({
+           duration: 800,
+           once: true,
+           disable: 'mobile',
+       })
     </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const checking = document.querySelector('.checking');
+const checking = document.querySelector('.block5');
 const scrolling = document.querySelector('.scrolling');
 
 window.addEventListener('scroll', () => { 

@@ -74,7 +74,7 @@
   }
 
   .main {
-    .wrapper {
+    .block1 {
       .check-btn {
         width: 100%;
         margin: 12px 0 34px;
@@ -85,12 +85,12 @@
       &-item:last-child {
         margin-bottom: 18px;
       }
-      .wrapper-btn {
+      .continue-btn {
         width: 100%;
       }
     }
 
-    .animText {
+    .block4 {
       margin: 40px 0;
       height: 58px;
       p {
@@ -99,14 +99,14 @@
       }
     }
     
-    .checking {
+    .block5 {
       &-item {
         width: 47%;
         margin-top: 30px;
       }
     }
 
-    .report {
+    .block6 {
       margin: 40px 0 30px;
       padding: 30px 0;
       &-item {
@@ -121,14 +121,14 @@
       }
     }
 
-    .map {
+    .block2 {
       margin: 50px 0 37px;
       iframe {
         height: 264px;
       }
     }
 
-    .objects {
+    .block3 {
       margin-bottom: 25px;
       &-form {
         .check-box {
@@ -187,12 +187,12 @@
       }
     }
 
-    .faqs {
+    .block7 {
       overflow: hidden;
       .subtitle {
         margin-bottom: 30px;
       }
-      .faqs-img {
+      .block7-img {
         position: absolute;
         right: 0;
         top: -20px;
@@ -212,6 +212,24 @@
       margin-top: 24px;
       li {
         margin-right: 0;
+      }
+    }
+  }
+
+  .main {
+    .profile {
+      margin: 32px 0 28px;
+      .exit-btn {
+        color: #0048FF;
+        svg path {
+          fill: #0048FF;
+        }
+      }
+
+      .profile-form {
+        .form-item {
+          width: 100%;
+        }
       }
     }
   }
@@ -261,7 +279,7 @@
 
 @media (max-width: 576px) {
   .main {
-    .wrapper {
+    .block1 {
       .address .icon {
         left: 22px;
       }
@@ -285,13 +303,13 @@
           line-height: 14px;
         }
       }
-      .wrapper-btn {
+      .continue-btn {
         font-size: 12px;
         line-height: 14px;
       }
     }
 
-    .checking {
+    .block5 {
       &-item {
         width: 100%;
         margin-top: 16px;
@@ -306,7 +324,7 @@
       }
     }
 
-    .report {
+    .block6 {
       background-image: url(../img/png/report-bg2.png);
       background-position: bottom;
       &-item {
@@ -319,7 +337,7 @@
       }
     }
 
-    .faqs {
+    .block7 {
       margin-bottom: 26px;
       .faq-item {
         .faq-head {
@@ -336,9 +354,19 @@
         }
       }
     }
+
+    .profile {
+      .reports {
+        .report {
+          width: 100%;
+        }
+      }
+    }
   }
 
-  .popUp-thanks {
+  .popUp-thanks,
+  .popUp-changesSaved,
+  .popUp-successfully {
     .popUp-content {
       width: 97%;
       padding: 50px 16px;
@@ -360,6 +388,22 @@
     }
   }
 
+  .popUp-changesSaved .popUp-content,
+  .popUp-successfully .popUp-content {
+    height: 170px;
+    padding: 40px 16px;
+  }
+
+  .popUp-exit {
+    .popUp-content {
+      width: 95%;
+      padding: 50px 20px;
+    }
+    .popUp-close {
+      top: 24px;
+      right: 24px;
+    }
+  }
 }
 
 @media (max-width: 420px) {
