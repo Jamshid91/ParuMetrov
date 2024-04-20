@@ -284,7 +284,7 @@
         left: 22px;
       }
       input.address__inp {
-        padding: 0 35px;
+        padding: 0 25px 0 42px;
         font-size: 12px;
         line-height: 14px;
       }
@@ -385,6 +385,9 @@
     .popUp-close {
       top: 40px;
       right: 16px;
+    }
+    .popUp-content {
+      background-size: 140% 85%;
     }
   }
 

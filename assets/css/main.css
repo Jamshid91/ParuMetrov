@@ -1441,8 +1441,9 @@ input, textarea, select {
   -webkit-border-radius: 30px;
           border-radius: 30px;
   background-image: url(../img/png/regis-bg.png);
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 88%;
+          background-size: 100% 88%;
   background-position: top;
   padding: 85px 55px 55px;
 }
@@ -1853,7 +1854,7 @@ input, textarea, select {
     left: 22px;
   }
   .main .block1 input.address__inp {
-    padding: 0 35px;
+    padding: 0 25px 0 42px;
     font-size: 12px;
     line-height: 14px;
   }
@@ -1931,6 +1932,10 @@ input, textarea, select {
   .popUp-form .popUp-close {
     top: 40px;
     right: 16px;
+  }
+  .popUp-form .popUp-content {
+    -webkit-background-size: 140% 85%;
+            background-size: 140% 85%;
   }
   .popUp-changesSaved .popUp-content,
   .popUp-successfully .popUp-content {

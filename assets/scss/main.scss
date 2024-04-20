@@ -1085,7 +1085,8 @@ body {
     width: 540px;
     border-radius: 30px;
     background-image: url(../img/png/regis-bg.png);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 88%;
     background-position: top;
     padding: 85px 55px 55px;
     .popUp-title {
