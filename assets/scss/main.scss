@@ -225,6 +225,7 @@ body {
       font-size: 55px;
       line-height: 64px;
       border-bottom: 3px dashed #0000001A;
+      white-space: nowrap;
     }
   }
 
@@ -261,6 +262,9 @@ body {
         top: 50%;
         transform: translateY(-50%);
         left: 25px;
+      }
+      &-head {
+        width: 60%;
       }
       input.address__inp {
         width: 100%;
@@ -332,7 +336,8 @@ body {
         line-height: 24px;
       }
       .block1-img {
-        max-width: 100%;
+        width: 35%;
+        object-fit: contain;
       }
     }
 
@@ -765,6 +770,28 @@ body {
               display: block;
             }
           }
+          .report-list {
+            padding: 8px;
+            background: #fff4;
+            border-radius: 4px;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 500;
+            p {
+              margin-right: 10px;
+            }
+            .buy {
+              padding: 2px 4px;
+              border-radius: 4px;
+              background: #fff;
+              color: #0048FF;
+              font-weight: 500;
+              &:hover {
+                background: #0048FF;
+                color: #fff;
+              }
+            }
+          }
         }
       }
       .exit-btn {
@@ -815,6 +842,30 @@ body {
           display: none;
           .user-list {
             padding: 12px 17px;
+          }
+          
+        }
+        .report-list {
+          padding: 8px;
+          background: #fff4;
+          border-radius: 4px;
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: 500;
+          margin-left: 8px;
+          p {
+            margin-right: 10px;
+          }
+          .buy {
+            padding: 2px 4px;
+            border-radius: 4px;
+            background: #fff;
+            color: #0048FF;
+            font-weight: 500;
+            &:hover {
+              background: #0048FF;
+              color: #fff;
+            }
           }
         }
       }
@@ -914,15 +965,29 @@ body {
           border-radius: 10px;
           box-shadow: 0px 4px 8px 0px rgba(0, 0, 20, 0.2);
           margin: 0 24px 24px 0;
+          color: #5A606F;
+          &-head {
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 500;
+            img {
+              margin-right: 10px;
+            }
+          }
           &-data {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 600;
+            margin: 10px 0 16px;
+          }
+          &-num {
             font-size: 20px;
             line-height: 23px;
             font-weight: 600;
-            color: #5A606F;
           }
-          &-view {
-            width: 186px;
-            height: 48px;
+          &-download {
+            width: 204px;
+            height: 45px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -933,6 +998,56 @@ body {
             &:hover svg path {
               fill: #0048FF;
             }
+          }
+        }
+        .report_load[disabled] {
+          opacity: .7;
+          pointer-events: none;
+
+      }
+      }
+
+      .payment-box {
+        border: 1px solid #919EAB14;
+        border-radius: 4px;
+        overflow: hidden;
+        min-height: 400px;
+        .payment-table {
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: 500;
+          color: #637381;
+          thead {
+            background: #919EAB14;
+            tr th {
+              font-weight: 600;
+              padding: 12px 8px;
+            }
+          }
+          tbody {
+            tr {
+              td {
+                padding: 8px;
+              }
+              &:nth-child(even) {
+                background: #1890FF14;
+              }
+            }
+          }
+        }
+      }
+      .navigation {
+        background: #F5F5F5;
+        padding: 4px 8px;
+        font-size: 14px;
+        line-height: 22px;
+        color: #212B36;
+        .btns {
+          button {
+            width: 35px;
+            height: 36px;
+            border-radius: 10px;
+            background: transparent;
           }
         }
       }

@@ -22,3 +22,10 @@ popUp_close.forEach(close => {
           }, 450);
     })
 });
+
+
+AOS.init({
+  duration: 800,
+  once: true,
+  disable: 'mobile',
+})

@@ -306,6 +306,7 @@ input, textarea, select {
   font-size: 55px;
   line-height: 64px;
   border-bottom: 3px dashed #0000001A;
+  white-space: nowrap;
 }
 
 .subtitle {
@@ -342,6 +343,10 @@ input, textarea, select {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 25px;
+}
+
+.main .block1-head {
+  width: 60%;
 }
 
 .main .block1 input.address__inp {
@@ -441,7 +446,9 @@ input, textarea, select {
 }
 
 .main .block1 .block1-img {
-  max-width: 100%;
+  width: 35%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .main .block4 {
@@ -1022,6 +1029,34 @@ input, textarea, select {
   display: block;
 }
 
+.main .profile .profile-head .user-box .report-list {
+  padding: 8px;
+  background: #fff4;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.main .profile .profile-head .user-box .report-list p {
+  margin-right: 10px;
+}
+
+.main .profile .profile-head .user-box .report-list .buy {
+  padding: 2px 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background: #fff;
+  color: #0048FF;
+  font-weight: 500;
+}
+
+.main .profile .profile-head .user-box .report-list .buy:hover {
+  background: #0048FF;
+  color: #fff;
+}
+
 .main .profile .exit-btn {
   background: transparent;
   font-size: 16px;
@@ -1085,6 +1120,35 @@ input, textarea, select {
 
 .main .profile .profile-head-mob .user-box .user-list {
   padding: 12px 17px;
+}
+
+.main .profile .profile-head-mob .report-list {
+  padding: 8px;
+  background: #fff4;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.main .profile .profile-head-mob .report-list p {
+  margin-right: 10px;
+}
+
+.main .profile .profile-head-mob .report-list .buy {
+  padding: 2px 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background: #fff;
+  color: #0048FF;
+  font-weight: 500;
+}
+
+.main .profile .profile-head-mob .report-list .buy:hover {
+  background: #0048FF;
+  color: #fff;
 }
 
 .main .profile .showProfile .active-user-list {
@@ -1198,18 +1262,35 @@ input, textarea, select {
   -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 20, 0.2);
           box-shadow: 0px 4px 8px 0px rgba(0, 0, 20, 0.2);
   margin: 0 24px 24px 0;
-}
-
-.main .profile .reports .report-data {
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: 600;
   color: #5A606F;
 }
 
-.main .profile .reports .report-view {
-  width: 186px;
-  height: 48px;
+.main .profile .reports .report-head {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.main .profile .reports .report-head img {
+  margin-right: 10px;
+}
+
+.main .profile .reports .report-data {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  margin: 10px 0 16px;
+}
+
+.main .profile .reports .report-num {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 600;
+}
+
+.main .profile .reports .report-download {
+  width: 204px;
+  height: 45px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1225,12 +1306,65 @@ input, textarea, select {
   margin-top: 16px;
 }
 
-.main .profile .reports .report-view span {
+.main .profile .reports .report-download span {
   margin-right: 10px;
 }
 
-.main .profile .reports .report-view:hover svg path {
+.main .profile .reports .report-download:hover svg path {
   fill: #0048FF;
+}
+
+.main .profile .reports .report_load[disabled] {
+  opacity: .7;
+  pointer-events: none;
+}
+
+.main .profile .payment-box {
+  border: 1px solid #919EAB14;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.main .profile .payment-box .payment-table {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #637381;
+}
+
+.main .profile .payment-box .payment-table thead {
+  background: #919EAB14;
+}
+
+.main .profile .payment-box .payment-table thead tr th {
+  font-weight: 600;
+  padding: 12px 8px;
+}
+
+.main .profile .payment-box .payment-table tbody tr td {
+  padding: 8px;
+}
+
+.main .profile .payment-box .payment-table tbody tr:nth-child(even) {
+  background: #1890FF14;
+}
+
+.main .profile .navigation {
+  background: #F5F5F5;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #212B36;
+}
+
+.main .profile .navigation .btns button {
+  width: 35px;
+  height: 36px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: transparent;
 }
 
 .footer {
@@ -1674,7 +1808,7 @@ input, textarea, select {
   }
   .main .block1 .check-btn {
     width: 100%;
-    margin: 12px 0 34px;
+    margin-top: 12px;
   }
   .main .block1 .sample-report {
     width: 100%;
@@ -1683,6 +1817,12 @@ input, textarea, select {
     margin-bottom: 18px;
   }
   .main .block1 .continue-btn {
+    width: 100%;
+  }
+  .main .block1-head {
+    width: 100%;
+  }
+  .main .block1 .block1-img {
     width: 100%;
   }
   .main .block4 {
@@ -1912,6 +2052,14 @@ input, textarea, select {
   }
   .main .profile .reports .report {
     width: 100%;
+    margin-right: 0;
+  }
+  .main .profile .payment-box {
+    min-height: 300px;
+  }
+  .main .profile .payment-box .payment-table {
+    font-size: 12px;
+    line-height: 14px;
   }
   .popUp-thanks .popUp-content,
   .popUp-changesSaved .popUp-content,

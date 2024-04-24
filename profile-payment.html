@@ -133,10 +133,65 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-7">
                         <h3 class="profile-title" data-aos="fade-up" data-aos-delay="75">Платежные документы</h3>
-                        <p class="profile-subtitle" data-aos="fade-up" data-aos-delay="100">Отсутствует информация</p>
+                        <div class="payment-box">
+                            <table class="payment-table w-100">
+                                <thead>
+                                    <tr>
+                                        <th>№</th>
+                                        <th>Дата платежа</th>
+                                        <th>Сумма</th>
+                                        <th>Статус</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>23.02.24</td>
+                                        <td>2500 ₽</td>
+                                        <td>
+                                            <img src="assets/img/svg/load.svg" alt="">
+                                            <span>В обработке</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>09.03.24</td>
+                                        <td>        500 ₽</td>
+                                        <td>
+                                            <img src="assets/img/svg/completed.svg" alt="">
+                                            <span>Завершен</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>30.01.24</td>
+                                        <td>900 ₽</td>
+                                        <td>
+                                            <img src="assets/img/svg/canceled.svg" alt="">
+                                            <span>Отменен</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="navigation d-flex justify-content-end align-items-center">
+                            <div class="count"><span>1-1</span> из <span>1</span></div>
+                            <div class="btns d-flex align-items-center">
+                                <button class="prev">
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.52473 11.8334C5.27257 11.8342 5.03359 11.7209 4.87473 11.525L0.849729 6.52504C0.596965 6.21754 0.596965 5.77421 0.849729 5.46671L5.0164 0.466712C5.31095 0.112329 5.83701 0.0638267 6.1914 0.358379C6.54578 0.65293 6.59428 1.179 6.29973 1.53338L2.57473 6.00004L6.17473 10.4667C6.38281 10.7165 6.42664 11.0644 6.28702 11.358C6.14739 11.6516 5.84979 11.8372 5.52473 11.8334Z" fill="#919EAB" fill-opacity="0.8"/>
+                                    </svg>
+                                </button>
+                                <button class="next">
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.33285 11.8334C1.13814 11.8337 0.949443 11.7659 0.799516 11.6417C0.629094 11.5004 0.521893 11.2971 0.501569 11.0767C0.481245 10.8562 0.549467 10.6368 0.691183 10.4667L4.42452 6.00004L0.824516 1.52504C0.684707 1.35287 0.619292 1.13208 0.642753 0.91155C0.666214 0.691015 0.776616 0.48893 0.949516 0.350035C1.12382 0.196669 1.35421 0.122973 1.58516 0.146701C1.81612 0.170429 2.0267 0.289431 2.16618 0.475035L6.19118 5.47504C6.44395 5.78254 6.44395 6.22587 6.19118 6.53337L2.02452 11.5334C1.85496 11.7379 1.59805 11.8493 1.33285 11.8334Z" fill="#212B36"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 d-none d-lg-flex justify-content-end">
                         <img src="assets/img/png/form.png" alt="" class="form-img" data-aos="fade-left" data-aos-delay="50">
@@ -335,12 +390,5 @@
     <script src="assets/js/form.js"></script>
     <script src="assets/js/popUp.js"></script>
     <script src="assets/js/profile.js"></script>
-    <script>
-         AOS.init({
-            duration: 800,
-            once: true,
-            disable: 'mobile',
-        })
-    </script>
 </body>
 </html>
