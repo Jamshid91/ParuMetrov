@@ -349,6 +349,10 @@ input, textarea, select {
   width: 60%;
 }
 
+.main .block1-head .title-text span {
+  white-space: nowrap;
+}
+
 .main .block1 input.address__inp {
   width: 100%;
   height: 72px;

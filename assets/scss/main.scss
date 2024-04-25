@@ -265,6 +265,9 @@ body {
       }
       &-head {
         width: 60%;
+        .title-text span {
+          white-space: nowrap;
+        }
       }
       input.address__inp {
         width: 100%;
